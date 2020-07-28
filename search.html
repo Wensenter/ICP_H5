@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <title>深圳电信网络备案</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header></header>
+        <main>
+            <!-- search -->
+            <div class="search-wrap">
+                <div class="search-box" onclick="handleSearchClick(this)">
+                    <i class="at at_search1"></i>
+                    <input type="text" class="search-input" placeholder="为什么要备案？ | 备案前准备那些资料？" oninput="handleInput(this)">
+                    <i class="at at_ICP-close-circle-fill clear" style="display: none;" onclick="handleClearInput()"></i>
+                </div>
+                <a href="javascript:;" class="cancle">取消</a>
+            </div>
+            <!-- search-link -->
+            <div class="search-link">
+                <a href="#" class="link-left">为什么要备案？</a>
+                <a href="#" class="link-right">备案前准备那些资料？</a>
+            </div>
+            <!-- hot-search -->
+            <div class="hot-search">
+                <p class="title">热门搜索推荐</p>
+                <ul class="hot-list">
+                    <li>
+                        <a href="#">为什么要备案？</a>
+                        <a href="#">备案前准备那些资料？</a>
+                    </li>
+                    <li>
+                        <a href="#">为什么要备案？</a>
+                        <a href="#">备案前准备那些资料？</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- related-record -->
+            <div class="related-record" style="display: none;">
+                <p class="title">热门搜索推荐</p>
+                <div class="list-wrap">
+                    <ul class="list">
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+<script src="js/jquery-3.3-min.js"></script>
+<script src="js/tool.js"></script>
+<script src="js/search.js"></script>
+</html>

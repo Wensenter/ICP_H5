@@ -7,16 +7,279 @@ main {
 footer {
   width: 100%;
 }
-.search-box {
-  width: 7.1rem /* 710/100 */;
+footer ul {
+  overflow: hidden;
+  width: 100%;
+  border: 0.01rem /* 1/100 */ solid #d8d8d8;
+  background: #fff;
+  font-size: 0;
+}
+footer ul li {
+  width: calc(100% / 3);
+  font-size: 0.18rem /* 18/100 */;
+  height: 0.98rem /* 98/100 */;
+  display: inline-block;
+}
+footer ul li a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #666;
+}
+footer ul li a .at {
+  font-size: 0.45rem /* 45/100 */;
+  display: inline-block;
+  color: #9b9b9b;
+  margin-top: 0.2rem /* 20/100 */;
+  margin-bottom: 0.04rem /* 4/100 */;
+}
+footer ul li:nth-child(1) {
+  text-align: left;
+  padding-left: 0.58rem /* 58/100 */;
+}
+footer ul li:nth-child(2) {
+  text-align: center;
+}
+footer ul li:nth-child(3) {
+  text-align: right;
+  padding-right: 0.44rem /* 44/100 */;
+}
+footer ul .active a {
+  color: #5184ee;
+}
+footer ul .active a .at {
+  color: #5184ee;
+}
+.wrap {
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+.wrap .search-box {
+  background: #fff;
+  width: 100%;
   height: 0.555rem /* 55.5/100 */;
   line-height: 0.555rem /* 55.5/100 */;
   border-radius: 0.1rem /* 10/100 */;
   border: 0.01rem /* 1/100 */ solid #e6e6ea;
   font-size: 0.26rem /* 26/100 */;
   padding: 0 0.22rem /* 22/100 */;
+  overflow: hidden;
 }
-.search-box .at_search1 {
+.wrap .search-box .at_search1 {
   color: #666;
   font-size: 0.26rem /* 26/100 */;
+}
+.wrap .search-box .text-swiper {
+  width: calc(100% - 0.62rem /* 62/100 */);
+  display: inline-block;
+  line-height: 0.555rem /* 55.5/100 */;
+}
+.wrap .swiper-container {
+  width: 100%;
+  margin-top: 0.29rem /* 29/100 */;
+}
+.wrap .swiper-container .swiper-slide > img {
+  height: 2.69rem /* 269/100 */;
+  width: 100%;
+}
+.wrap .questions {
+  width: 100%;
+  height: 2.78rem /* 278/100 */;
+  background: #fff;
+  margin-top: 0.26rem /* 26/100 */;
+  overflow: hidden;
+}
+.wrap .questions .question-item {
+  float: left;
+  display: block;
+  width: calc(100% / 3);
+  height: 1.39rem /* 139/100 */;
+  font-size: 0.24rem /* 24/100 */;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 0.27rem /* 27/100 */;
+  text-decoration: none;
+}
+.wrap .questions .question-item .at {
+  color: #5184ee;
+  font-size: 0.44rem /* 44/100 */;
+}
+.wrap .questions .question-item p {
+  margin-top: 0.15rem /* 15/100 */;
+  color: #333;
+}
+.wrap .record-type {
+  margin-top: 0.26rem /* 26/100 */;
+}
+.wrap .record-type .title {
+  font-size: 0.36rem /* 36/100 */;
+  color: #333;
+  font-weight: 500;
+}
+.wrap .record-type .type-main {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 0.28rem /* 28/100 */;
+  white-space: nowrap;
+  margin-right: -0.28rem /* 28/100 */;
+  font-size: 0;
+}
+.wrap .record-type .type-main .type-item {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  height: 3.07rem /* 307/100 */;
+  width: 2.52rem /* 252/100 */;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0.28rem /* 28/100 */ 0.3rem /* 30/100 */ 0.19rem /* 19/100 */;
+  margin-right: 0.28rem /* 28/100 */;
+}
+.wrap .record-type .type-main .type-item .at {
+  font-size: 0.5rem /* 50/100 */;
+  font-weight: 600;
+}
+.wrap .record-type .type-main .type-item .type-name {
+  font-size: 0.38rem /* 38/100 */;
+  font-weight: 600;
+  color: #fff;
+  line-height: 0.53rem /* 53/100 */;
+  margin-top: 0.13rem /* 13/100 */;
+  margin-bottom: 0.12rem /* 12/100 */;
+}
+.wrap .record-type .type-main .type-item .type-des {
+  white-space: normal;
+  font-size: 0.24rem /* 24/100 */;
+  line-height: 0.33rem /* 33/100 */;
+}
+.wrap .record-type .type-main .type-1 {
+  background: #ffb629;
+  color: #784208;
+}
+.wrap .record-type .type-main .type-2 {
+  background: #00d1aa;
+  color: #026956;
+}
+.wrap .record-type .type-main .type-3 {
+  background: #ff7c6a;
+  color: #bc2e1b;
+}
+.wrap .record-type .type-main .type-4 {
+  background: #8dd751;
+  color: #396117;
+}
+.wrap .record-type .type-main .type-5 {
+  background: #749df1;
+  color: #2b406b;
+}
+.wrap .record-process {
+  margin-top: 0.3rem /* 30/100 */;
+  border: 0.01rem /* 1/100 */ solid #979797;
+  background: #fff;
+  width: 100%;
+  padding: 0.24rem /* 24/100 */ 0.29rem /* 29/100 */ 0;
+}
+.wrap .record-process .head {
+  overflow: hidden;
+  padding-bottom: 0.19rem /* 19/100 */;
+  border-bottom: 0.01rem /* 1/100 */ solid #e5e5e5;
+  line-height: 0.5rem /* 50/100 */;
+}
+.wrap .record-process .head span {
+  float: left;
+  font-size: 0.36rem /* 36/100 */;
+  font-weight: 500;
+  color: #333;
+}
+.wrap .record-process .head a {
+  float: right;
+  font-size: 0.24rem /* 24/100 */;
+  color: #5184ee;
+  font-weight: 500;
+  text-decoration: none;
+}
+.wrap .record-process .list {
+  padding-top: 0.24rem /* 24/100 */;
+}
+.wrap .record-process .list li {
+  overflow: hidden;
+  margin-bottom: 0.28rem /* 28/100 */;
+}
+.wrap .record-process .list li .at {
+  float: left;
+  width: 0.8rem /* 80/100 */;
+  height: 0.8rem /* 80/100 */;
+  line-height: 0.8rem /* 80/100 */;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(81,132,238,0.8);
+  color: #fff;
+  font-size: 0.4rem /* 40/100 */;
+}
+.wrap .record-process .list li .content {
+  float: right;
+  width: calc(100% - 1.08rem /* 108/100 */);
+}
+.wrap .record-process .list li .content .title {
+  font-size: 0.24rem /* 24/100 */;
+  color: #333;
+  font-weight: 600;
+  line-height: 0.33rem /* 33/100 */;
+  margin-bottom: 0.14rem /* 14/100 */;
+}
+.wrap .record-process .list li .content .des {
+  font-size: 0.2rem /* 20/100 */;
+  color: #666;
+  margin-bottom: 0.14rem /* 14/100 */;
+}
+.wrap .record-process .list li .content .link {
+  display: block;
+  font-size: 0.2rem /* 20/100 */;
+  color: #005dcc;
+  line-height: 0.28rem /* 28/100 */;
+  text-decoration: none;
+}
+.wrap .record-process .record-btn {
+  width: 100%;
+  height: 0.94rem /* 94/100 */;
+  border-radius: 0.1rem /* 10/100 */;
+  border: 0.02rem /* 2/100 */ solid rgba(5,5,5,0.08);
+  outline: none;
+  background: #5184ee;
+  font-size: 0.36rem /* 36/100 */;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.37rem /* 37/100 */;
+}
+.wrap .common-problem {
+  margin-top: 0.29rem /* 29/100 */;
+}
+.wrap .common-problem .head {
+  overflow: hidden;
+  line-height: 0.5rem /* 50/100 */;
+}
+.wrap .common-problem .head span {
+  font-size: 0.36rem /* 36/100 */;
+  color: #666;
+  font-weight: 500;
+  float: left;
+}
+.wrap .common-problem .head a {
+  font-size: 0.24rem /* 24/100 */;
+  color: #5184ee;
+  float: right;
+  font-weight: 500;
+  text-decoration: none;
+}
+.wrap .common-problem .list {
+  margin-top: 0.3rem /* 30/100 */;
+  padding: 0 0.28rem /* 28/100 */;
+  overflow: hidden;
+}
+.wrap .common-problem .list li {
+  font-size: 0.24rem /* 24/100 */;
+  color: #666;
+  line-height: 0.33rem /* 33/100 */;
+  margin-bottom: 0.2rem /* 20/100 */;
 }

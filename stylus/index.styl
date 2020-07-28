@@ -1,12 +1,194 @@
 @import './common.styl'
+.wrap
+    background #F4F4F4
+    min-height 100vh
     .search-box
-        width 7.1rem /* 710/100 */
+        background #fff
+        width 100%
         height .555rem /* 55.5/100 */
         line-height .555rem /* 55.5/100 */
         border-radius .1rem /* 10/100 */
         border .01rem /* 1/100 */solid rgba(230,230,234,1)
         font-size .26rem /* 26/100 */
         padding 0 .22rem /* 22/100 */
+        overflow hidden
         .at_search1
             color #666666
             font-size .26rem /* 26/100 */
+        .text-swiper
+            width calc(100% - .62rem /* 62/100 */)
+            display inline-block
+            line-height .555rem /* 55.5/100 */
+    .swiper-container
+        width 100%
+        margin-top .29rem /* 29/100 */
+        .swiper-slide > img
+            height 2.69rem /* 269/100 */
+            width 100%
+    .questions
+        width 100%
+        height 2.78rem /* 278/100 */
+        background #fff
+        margin-top .26rem /* 26/100 */
+        overflow hidden
+        .question-item
+            float left
+            display block
+            width calc(100% / 3)
+            height 1.39rem /* 139/100 */
+            font-size .24rem /* 24/100 */
+            text-align center
+            box-sizing border-box
+            padding-top .27rem /* 27/100 */
+            text-decoration none
+            .at
+                color #5184EE
+                font-size .44rem /* 44/100 */
+            p
+                margin-top .15rem /* 15/100 */
+                color #333333
+    .record-type
+        margin-top .26rem /* 26/100 */
+        .title
+            font-size .36rem /* 36/100 */
+            color #333333
+            font-weight 500
+        .type-main
+            width 100%
+            overflow-x scroll
+            overflow-y hidden
+            margin-top .28rem /* 28/100 */
+            white-space nowrap
+            margin-right -0.28rem /* 28/100 */
+            font-size 0
+            .type-item
+                text-decoration none
+                display inline-block
+                vertical-align middle
+                height 3.07rem /* 307/100 */
+                width 2.52rem /* 252/100 */
+                text-align center
+                box-sizing border-box
+                padding .28rem /* 28/100 */ .3rem /* 30/100 */ .19rem /* 19/100 */
+                margin-right .28rem /* 28/100 */
+                .at
+                    font-size .5rem /* 50/100 */
+                    font-weight 600
+                .type-name
+                    font-size .38rem /* 38/100 */
+                    font-weight 600
+                    color #fff
+                    line-height .53rem /* 53/100 */
+                    margin-top .13rem /* 13/100 */
+                    margin-bottom .12rem /* 12/100 */
+                .type-des
+                    white-space normal
+                    font-size .24rem /* 24/100 */
+                    line-height .33rem /* 33/100 */
+            .type-1
+                background #FFB629
+                color #784208
+            .type-2
+                background #00D1AA
+                color #026956
+            .type-3
+                background #FF7C6A
+                color #BC2E1B
+            .type-4
+                background #8DD751
+                color #396117
+            .type-5
+                background #749DF1
+                color #2B406B
+    .record-process
+        margin-top .3rem /* 30/100 */
+        border .01rem /* 1/100 */solid #979797
+        background #fff
+        width 100%
+        padding .24rem /* 24/100 */.29rem /* 29/100 */0
+        .head
+            overflow hidden
+            padding-bottom .19rem /* 19/100 */
+            border-bottom .01rem /* 1/100 */solid #E5E5E5
+            line-height .5rem /* 50/100 */
+            span
+                float left
+                font-size .36rem /* 36/100 */
+                font-weight 500
+                color #333
+            a
+                float right
+                font-size .24rem /* 24/100 */
+                color #5184EE
+                font-weight 500
+                text-decoration none
+        .list
+            padding-top .24rem /* 24/100 */
+            li
+                overflow hidden
+                margin-bottom .28rem /* 28/100 */
+                .at
+                    float left
+                    width .8rem /* 80/100 */
+                    height .8rem /* 80/100 */
+                    line-height .8rem /* 80/100 */
+                    text-align center
+                    border-radius 50%
+                    background rgba(81,132,238,0.8)
+                    color #fff
+                    font-size .4rem /* 40/100 */
+                .content
+                    float right
+                    width calc(100% - 1.08rem /* 108/100 */)
+                    .title
+                        font-size .24rem /* 24/100 */
+                        color #333333
+                        font-weight 600
+                        line-height .33rem /* 33/100 */
+                        margin-bottom .14rem /* 14/100 */
+                    .des
+                        font-size .2rem /* 20/100 */
+                        color #666
+                        margin-bottom .14rem /* 14/100 */
+                    .link
+                        display block
+                        font-size .2rem /* 20/100 */
+                        color #005DCC
+                        line-height .28rem /* 28/100 */
+                        text-decoration none
+        .record-btn
+            width 100%
+            height .94rem /* 94/100 */
+            border-radius .1rem /* 10/100 */
+            border .02rem /* 2/100 */solid rgba(5,5,5,0.08)
+            outline none 
+            background #5184EE
+            font-size .36rem /* 36/100 */
+            color #fff
+            font-weight 500
+            margin-bottom .37rem /* 37/100 */
+    .common-problem
+        margin-top .29rem /* 29/100 */
+        .head
+            overflow hidden
+            line-height .5rem /* 50/100 */
+            span
+                font-size .36rem /* 36/100 */
+                color #666
+                font-weight 500
+                float left
+            a
+                font-size .24rem /* 24/100 */
+                color #5184EE
+                float right
+                font-weight 500
+                text-decoration none
+        .list
+            margin-top .3rem /* 30/100 */
+            padding 0 .28rem /* 28/100 */
+            overflow hidden
+            li
+                font-size .24rem /* 24/100 */
+                color #666
+                line-height .33rem /* 33/100 */
+                margin-bottom .2rem /* 20/100 */
