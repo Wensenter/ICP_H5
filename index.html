@@ -17,7 +17,7 @@
             <!-- search -->
             <div class="search-box">
                 <i class="at at_search1"></i>
-                <div class="text-swiper">
+                <div class="text-swiper swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><span>为什么要备案？ | 备案前准备那些资料？</span></div>
                         <div class="swiper-slide"><span>为什么要备案？ | 备案前准备那些资料？</span></div>
@@ -26,12 +26,13 @@
                 </div>
             </div>
             <!-- swiper -->
-            <div class="swiper-container">
+            <div class="banner-swiper swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="img/swiper-1.png" alt=""></div>
                   <div class="swiper-slide"><img src="img/swiper-2.png" alt=""></div>
                   <div class="swiper-slide"><img src="img/swiper-3.png" alt=""></div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
             <!-- questions -->
             <div class="questions">
@@ -59,6 +60,115 @@
                     <i class="at at_ICP-sound"></i>
                     <p>通知公告</p>
                 </a>
+            </div>
+            <!-- record-process -->
+            <div class="record-process">
+                <div class="head">
+                    <span>备案流程简介</span>
+                    <a href="javascript:;" style="display: none;" onclick="checkoutDes(this)">分步阅读 ></a>
+                    <a href="javascript:;" onclick="checkoutInfo(this)">详细阅读 ></a>
+                </div>
+                <div class="info-model" style="display: none;">
+                    <ul class="list">
+                        <li>
+                            <i class="at at_ICP-adduser icon-blue"></i>
+                            <div class="content">
+                                <p class="title">登录中国电信网站备案系统</p>
+                                <p class="des">
+                                    首次使用广东电信接入或原通过广东电信代为备案，请完成账号注册；已在使用广东电信备案账号的，使用原账号登录系统。
+                                </p>
+                                <a href="#" class="link">备案网址：http://beian.189cn ></a>
+                                <p class="des">
+                                    需选择所购买接入服务IP、填写主体信息、网站信息、上传备案资料。
+                                </p>
+                                <a href="#" class="link">备案填写注意事项 ></a>
+                                <a href="#" class="link">ICP备案密码知识 ></a>
+                                <a href="#" class="link">备案常用资料下载 ></a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="at at_ICP-edit-square icon-green"></i>
+                            <div class="content">
+                                <p class="title">现场真实性核验并提交管局</p>
+                                <p class="des">
+                                    深圳电信核对您提交的信息，并及时系统内反馈审核结果。如使用电子化远程核验方式，审核通过后将直接提交管局。
+                                </p>
+                                <a href="#" class="link">电子化核验指引 ></a>
+                                <p class="des">
+                                    未使用电子化远程核验方式的备案信息，需要完成现场真实性核验。
+                                </p>
+                                <a href="#" class="link">现场真实性核验地址查询 ></a>
+                                <a href="#" class="link">现场核验携带材料指引 ></a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="at at_ICP-solution icon-orange"></i>
+                            <div class="content">
+                                <p class="title">管局审核通过，备案成功</p>
+                                <p class="des">
+                                    深圳电信审核通过后，管局将在20个工作日内通知审核结果。如管局审核期间需配合发送验证短信，请及时完成验证。 管局审核通过后获取ICP网站备案号，可开通接入服务。
+                                </p>
+                                <a href="#" class="link">各省管局审核规则 ></a>
+                                <a href="#" class="link">备案成功后注意事项 ></a>
+                                <a href="#" class="link">公安联网备案指南 ></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="record-btn">开始备案</button>
+                </div>
+                <div class="des-model">
+                    <div class="swiper-tag swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="des-wrap">
+                                <img src="img/des_1.png" alt="">
+                                <div class="des-box">
+                                    <p class="title">登录中国电信网站备案系统</p>
+                                    <a href="#" class="link">备案网址：http://beian.189cn ></a>
+                                    <a href="#" class="link">备案填写注意事项 ></a>
+                                    <a href="#" class="link">ICP备案密码知识 ></a>
+                                    <a href="#" class="link">备案常用资料下载 ></a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="des-wrap">
+                                <img src="img/des_3.png" alt="">
+                                <div class="des-box">
+                                    <p class="title">履行真实性核验后提交管局</p>
+                                    <p class="sub-title">电子化和现场核验任选其一：</p>
+                                    <a href="#" class="link">电子化核验指引 ></a>
+                                    <a href="#" class="link">现场真实性核验地址查询 ></a>
+                                    <a href="#" class="link">现场核验携带材料指引 ></a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="des-wrap">
+                                <img src="img/des_2.png" alt="">
+                                <div class="des-box">
+                                    <p class="title">管局审核通过，备案成功</p>
+                                    <a href="#" class="link">各省管局审核规则 ></a>
+                                    <a href="#" class="link">备案成功后注意事项 ></a>
+                                    <a href="#" class="link">公安联网备案指南 ></a>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <div class="des-wrap">
+                                <p class="des-title">点击按钮，开始备案</p>
+                                <button class="des-btn">开始备案</button>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-prev">
+                            <i class="at at_ICP-left"></i>
+                        </div>
+                        <div class="swiper-next">
+                            <i class="at at_ICP-left"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- record-type -->
             <div class="record-type">
@@ -101,85 +211,39 @@
                     </a>
                 </div>
             </div>
-            <!-- record-process -->
-            <div class="record-process">
-                <div class="head">
-                    <span>备案流程简介</span>
-                    <a href="#">备案所需材料 ></a>
-                </div>
-                <ul class="list">
-                    <li>
-                        <i class="at at_ICP-adduser"></i>
-                        <div class="content">
-                            <p class="title">登录中国电信网站备案系统</p>
-                            <p class="des">
-                                首次使用广东电信接入或原通过广东电信代为备案，请完成账号注册；已在使用广东电信备案账号的，使用原账号登录系统。
-                            </p>
-                            <a href="#" class="link">备案网址：http://beian.189cn ></a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="at at_ICP-edit-square"></i>
-                        <div class="content">
-                            <p class="title">备案信息填写</p>
-                            <p class="des">
-                                需选择所购买接入服务IP、填写主体信息、网站信息、上传备案资料。
-                            </p>
-                            <a href="#" class="link">备案填写注意事项 ></a>
-                            <a href="#" class="link">ICP备案密码知识 ></a>
-                            <a href="#" class="link">备案常用资料下载 ></a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="at at_ICP-solution"></i>
-                        <div class="content">
-                            <p class="title">电信管理员审核</p>
-                            <p class="des">
-                                深圳电信核对您提交的信息，并及时系统内反馈审核结果。如使用电子化远程核验方式，审核通过后将直接提交管局。
-                            </p>
-                            <a href="#" class="link">电子化核验指引 ></a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="at at_ICP-fileprotect"></i>
-                        <div class="content">
-                            <p class="title">现场真实性核验并提交管局</p>
-                            <p class="des">
-                                未使用电子化远程核验方式的备案信息，需要完成现场真实性核验。
-                            </p>
-                            <a href="#" class="link">现场真实性核验地址查询 ></a>
-                            <a href="#" class="link">现场核验携带材料指引 ></a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="at at_ICP-audit"></i>
-                        <div class="content">
-                            <p class="title">管局审核</p>
-                            <p class="des">
-                                深圳电信审核通过后，管局将在20个工作日内通知审核结果。如管局审核期间需配合发送验证短信，请及时完成验证。
-                            </p>
-                            <a href="#" class="link">各管局审核规则 ></a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="at at_ICP-safetycertificate"></i>
-                        <div class="content">
-                            <p class="title">备案成功</p>
-                            <p class="des">
-                                成功获取ICP网站备案号，可开通接入服务。
-                            </p>
-                            <a href="#" class="link">备案成功后注意事项 ></a>
-                            <a href="#" class="link">公安联网备案指南 ></a>
-                        </div>
-                    </li>
-                </ul>
-                <button type="button" class="record-btn">开始备案</button>
-            </div>
             <!-- common-problem -->
             <div class="common-problem">
                 <div class="head">
                     <span>常见问题</span>
                     <a href="#">更多 ></a>
+                </div>
+                <!-- list-content -->
+                <div class="list-question">
+                    <div class="question-tags">
+                        <div class="row">
+                            <a href="javascript:;" class="left active">真实性核验FAQ</a>
+                            <a href="javascript:;" class="right">管局短信核验FAQ</a>
+                        </div>
+                        <div class="row">
+                            <a href="javascript:;" class="left">ICP备案密码FAQ</a>
+                            <a href="javascript:;" class="right">备案流程FAQ</a>
+                        </div>
+                        <div class="row">
+                            <a href="javascript:;" class="left">备案域名相关FAQ</a>
+                            <a href="javascript:;" class="right">接入信息相关FAQ</a>
+                        </div>
+                        <div class="row">
+                            <a href="javascript:;" class="left">前置审批文件FAQ</a>
+                            <a href="javascript:;" class="right">经营性备案FAQ</a>
+                        </div>
+                        <div class="row">
+                            <a href="javascript:;" class="left">备案审核驳回FAQ</a>
+                            <a href="javascript:;" class="right">备案场景FAQ</a>
+                        </div>
+                        <div class="row">
+                            <a href="javascript:;" class="left">工信部页面操作FAQ</a>
+                        </div>
+                    </div>
                 </div>
                 <ul class="list">
                     <li>• 信息安全入网责任书填写注意事项？</li>

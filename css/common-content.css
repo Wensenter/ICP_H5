@@ -60,7 +60,7 @@ footer ul .active a .at {
 }
 .wrap .search-wrap .search-box {
   background: #fff;
-  width: calc(100% - 0.69rem /* 69/100 */);
+  width: 100%;
   height: 0.555rem /* 55.5/100 */;
   line-height: 0.555rem /* 55.5/100 */;
   border-radius: 0.1rem /* 10/100 */;
@@ -89,88 +89,56 @@ footer ul .active a .at {
   text-indent: 0.1rem /* 10/100 */;
   color: #005dcc;
 }
-.wrap .search-wrap .search-box .at_ICP-close-circle-fill {
-  float: right;
-  color: #ccc;
-  font-size: 0.31rem /* 31/100 */;
-}
-.wrap .search-wrap .cancle {
-  font-size: 0.26rem /* 26/100 */;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  color: #9b9b9b;
-  text-decoration: none;
-}
-.wrap .search-link {
-  margin-top: 0.53rem /* 53/100 */;
-  overflow: hidden;
-  font-size: 0;
-  padding: 0 0.29rem /* 29/100 */;
-}
-.wrap .search-link a {
-  display: inline-block;
-  font-size: 0.26rem /* 26/100 */;
+.wrap .search-wrap .search-box input::-webkit-input-placeholder,
+.wrap .search-wrap .search-box input::-ms-input-placeholder {
   color: #4a4a4a;
-  text-decoration: none;
-  line-height: 0.38rem /* 38/100 */;
 }
-.wrap .search-link .link-left {
-  float: left;
+.wrap .list-content {
+  margin-top: 0.36rem /* 36/100 */;
 }
-.wrap .search-link .link-right {
-  float: right;
-}
-.wrap .hot-search {
-  margin-top: 0.38rem /* 38/100 */;
-}
-.wrap .hot-search .title {
+.wrap .list-content .title {
   font-size: 0.3rem /* 30/100 */;
   color: #5184ee;
   font-weight: 600;
+  line-height: 0.42rem /* 42/100 */;
 }
-.wrap .hot-search .hot-list {
-  margin-top: 0.28rem /* 28/100 */;
-  padding: 0 0.29rem /* 29/100 */;
+.wrap .list-content .content {
+  margin-top: 0.4rem /* 40/100 */;
+  margin-bottom: 0.1rem /* 10/100 */;
+  padding: 0 0.2rem /* 20/100 */;
   font-size: 0;
+  color: #333;
+  text-align: center;
 }
-.wrap .hot-search .hot-list li {
-  height: 0.55rem /* 55/100 */;
+.wrap .list-content .content .article-title {
+  font-size: 0.36rem /* 36/100 */;
+  line-height: 0.5rem /* 50/100 */;
+  margin-bottom: 0.5rem /* 50/100 */;
 }
-.wrap .hot-search .hot-list li a {
+.wrap .list-content .content .text {
   font-size: 0.26rem /* 26/100 */;
-  line-height: 0.38rem /* 38/100 */;
-  text-decoration: none;
-  display: inline-block;
-  color: #4a4a4a;
+  line-height: 0.5rem /* 50/100 */;
+  text-indent: 3em;
+  text-align: left;
+  margin-bottom: 0.3rem /* 30/100 */;
 }
-.wrap .hot-search .hot-list li a:last-child {
-  margin-left: 0.5rem /* 50/100 */;
-}
-.wrap .related-record {
-  margin-top: 0.3rem /* 30/100 */;
-}
-.wrap .related-record .title {
+.wrap .list-content .attachment .title {
   font-size: 0.3rem /* 30/100 */;
+  line-height: 0.42rem /* 42/100 */;
+}
+.wrap .list-content .attachment .download {
+  display: block;
+  font-size: 0.3rem /* 30/100 */;
+  margin-top: 0.26rem /* 26/100 */;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.95rem /* 95/100 */;
+  line-height: 0.95rem /* 95/100 */;
+  background: #fff;
   color: #5184ee;
-  font-weight: 600;
+  padding: 0 0.29rem /* 29/100 */;
+  text-decoration: none;
 }
-.wrap .related-record .list-wrap {
-  font-size: 0;
-  padding: 0 0.27rem /* 27/100 */;
-}
-.wrap .related-record .list-wrap .list {
-  list-style: disc;
-  list-style-position: inside;
-  margin-top: 0.39rem /* 39/100 */;
-}
-.wrap .related-record .list-wrap .list li {
-  font-size: 0.26rem /* 26/100 */;
-  color: #4a4a4a;
-  line-height: 0.37rem /* 37/100 */;
-  margin-bottom: 0.4rem /* 40/100 */;
-}
-.wrap .related-record .list-wrap .list li .key {
-  color: #005dcc;
+.wrap .list-content .attachment .download .at {
+  margin-right: 0.26rem /* 26/100 */;
 }

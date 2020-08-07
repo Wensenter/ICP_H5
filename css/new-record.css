@@ -1,0 +1,206 @@
+header {
+  width: 100%;
+}
+main {
+  padding: 0.28rem /* 28/100 */ 0.2rem /* 20/100 */ 0;
+}
+footer {
+  width: 100%;
+}
+footer ul {
+  overflow: hidden;
+  width: 100%;
+  border: 0.01rem /* 1/100 */ solid #d8d8d8;
+  background: #fff;
+  font-size: 0;
+}
+footer ul li {
+  width: calc(100% / 3);
+  font-size: 0.18rem /* 18/100 */;
+  height: 0.98rem /* 98/100 */;
+  display: inline-block;
+}
+footer ul li a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #666;
+}
+footer ul li a .at {
+  font-size: 0.45rem /* 45/100 */;
+  display: inline-block;
+  color: #9b9b9b;
+  margin-top: 0.2rem /* 20/100 */;
+  margin-bottom: 0.04rem /* 4/100 */;
+}
+footer ul li:nth-child(1) {
+  text-align: left;
+  padding-left: 0.58rem /* 58/100 */;
+}
+footer ul li:nth-child(2) {
+  text-align: center;
+}
+footer ul li:nth-child(3) {
+  text-align: right;
+  padding-right: 0.44rem /* 44/100 */;
+}
+footer ul .active a {
+  color: #5184ee;
+}
+footer ul .active a .at {
+  color: #5184ee;
+}
+.wrap {
+  background: #f4f4f4;
+  min-height: 100vh;
+}
+.wrap .search-wrap {
+  font-size: 0;
+  position: relative;
+}
+.wrap .search-wrap .search-box {
+  background: #fff;
+  width: 100%;
+  height: 0.555rem /* 55.5/100 */;
+  line-height: 0.555rem /* 55.5/100 */;
+  border-radius: 0.1rem /* 10/100 */;
+  border: 0.01rem /* 1/100 */ solid #e6e6ea;
+  font-size: 0.26rem /* 26/100 */;
+  padding: 0 0.11rem /* 11/100 */ 0 0.22rem /* 22/100 */;
+  overflow: hidden;
+  position: relative;
+  color: #4a4a4a;
+}
+.wrap .search-wrap .search-box .at_search1 {
+  color: #666;
+  font-size: 0.26rem /* 26/100 */;
+}
+.wrap .search-wrap .search-box input {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0.63rem /* 63/100 */;
+  right: 0.52rem /* 52/100 */;
+  width: calc(100% - 1.15rem /* 115/100 */);
+  height: 100%;
+  outline: none;
+  background: transparent;
+  border: 0;
+  text-indent: 0.1rem /* 10/100 */;
+  color: #005dcc;
+}
+.wrap .search-wrap .search-box input::-webkit-input-placeholder,
+.wrap .search-wrap .search-box input::-ms-input-placeholder {
+  color: #4a4a4a;
+}
+.wrap .search-wrap .search-box .at_ICP-close-circle-fill {
+  float: right;
+  color: #ccc;
+  font-size: 0.31rem /* 31/100 */;
+}
+.wrap .tag-list {
+  padding: 0.22rem /* 22/100 */ 0.3rem /* 30/100 */;
+  margin-right: -0.12rem /* 12/100 */;
+  font-size: 0;
+  white-space: nowrap;
+}
+.wrap .tag-list a {
+  width: 1.54rem /* 154/100 */;
+  line-height: 0.4rem /* 40/100 */;
+  text-align: left;
+  display: inline-block;
+  margin-right: 0.12rem /* 12/100 */;
+  font-size: 0.28rem /* 28/100 */;
+  text-decoration: none;
+  color: #5184ee;
+}
+.wrap .record {
+  width: 100%;
+  padding: 0.35rem /* 35/100 */ 0.3rem /* 30/100 */ 0.53rem /* 53/100 */;
+  background: #fff;
+}
+.wrap .record h1 {
+  font-size: 0.36rem /* 36/100 */;
+  font-weight: 500;
+  line-height: 0.5rem /* 50/100 */;
+  text-align: center;
+  margin-bottom: 0.27rem /* 27/100 */;
+}
+.wrap .record .list li {
+  margin-bottom: 0.29rem /* 29/100 */;
+}
+.wrap .record .list li .list-des {
+  font-size: 0.3rem /* 30/100 */;
+  color: #fff;
+  height: 0.94rem /* 94/100 */;
+  line-height: 0.94rem /* 94/100 */;
+  position: relative;
+}
+.wrap .record .list li .list-des .at {
+  font-size: 0.5rem /* 50/100 */;
+  vertical-align: middle;
+  margin-right: 0.18rem /* 18/100 */;
+  color: #fff;
+  margin-left: 0.36rem /* 36/100 */;
+}
+.wrap .record .list li .list-des:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 0.1rem /* 10/100 */;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  right: 0.5rem /* 50/100 */;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrap .record .list li .list-ctx {
+  position: relative;
+  top: -0.02rem /* 2/100 */;
+  font-size: 0.3rem /* 30/100 */;
+  color: #666;
+  border: 0.02rem /* 2/100 */ solid rgba(5,5,5,0.08);
+  padding: 0.26rem /* 26/100 */;
+  display: none;
+  transition: all;
+}
+.wrap .record .list li .yellow {
+  background: #ffb628;
+}
+.wrap .record .list li .yellow + .list-ctx {
+  background: #fff9ec;
+}
+.wrap .record .list li .green {
+  background: #00d0aa;
+}
+.wrap .record .list li .green + .list-ctx {
+  background: #ecfffc;
+}
+.wrap .record .list li .orange {
+  background: #ff7c6a;
+}
+.wrap .record .list li .orange + .list-ctx {
+  background: #fff1ef;
+}
+.wrap .record .list li .light-green {
+  background: #8fd75b;
+}
+.wrap .record .list li .light-green + .list-ctx {
+  background: #f2ffe8;
+}
+.wrap .record .list li .blue {
+  background: #749df1;
+}
+.wrap .record .list li .blue + .list-ctx {
+  background: #f1f6ff;
+}
+.wrap .record .list .active .list-des:after {
+  transform: rotate(90deg);
+  transition: all 0.2s;
+}
+.wrap .record .list .active .list-ctx {
+  display: block;
+  transition: all 0.3s;
+}

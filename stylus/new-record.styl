@@ -1,0 +1,128 @@
+@import './common.styl'
+.wrap
+    background #F4F4F4
+    min-height 100vh
+    .search-wrap
+        font-size 0
+        position relative
+        .search-box
+            background #fff
+            width 100%
+            height .555rem /* 55.5/100 */
+            line-height .555rem /* 55.5/100 */
+            border-radius .1rem /* 10/100 */
+            border .01rem /* 1/100 */solid rgba(230,230,234,1)
+            font-size .26rem /* 26/100 */
+            padding 0 .11rem /* 11/100 */0 .22rem /* 22/100 */
+            overflow hidden
+            position relative
+            color #4A4A4A
+            .at_search1
+                color #666666
+                font-size .26rem /* 26/100 */
+            input
+                position absolute
+                padding 0
+                top 0
+                left .63rem /* 63/100 */
+                right .52rem /* 52/100 */   
+                width calc(100% - 1.15rem /* 115/100 */)
+                height 100%
+                outline none
+                background transparent
+                border 0
+                text-indent .1rem /* 10/100 */
+                color #005DCC
+                &::-webkit-input-placeholder,&::-ms-input-placeholder
+                    color #4A4A4A
+            .at_ICP-close-circle-fill
+                float right
+                color #CCCCCC
+                font-size .31rem /* 31/100 */
+    .tag-list
+        padding .22rem /* 22/100 */.3rem /* 30/100 */
+        margin-right -0.12rem /* 12/100 */
+        font-size 0
+        white-space nowrap
+        a
+            width 1.54rem /* 154/100 */
+            line-height .4rem /* 40/100 */
+            text-align left
+            display inline-block
+            margin-right .12rem /* 12/100 */
+            font-size .28rem /* 28/100 */
+            text-decoration none
+            color #5184EE
+    .record
+        width 100%
+        padding .35rem /* 35/100 */ .3rem /* 30/100 */ .53rem /* 53/100 */
+        background #fff
+        h1
+            font-size .36rem /* 36/100 */
+            font-weight 500
+            line-height .5rem /* 50/100 */
+            text-align center
+            margin-bottom .27rem /* 27/100 */
+        .list
+            li
+                margin-bottom .29rem /* 29/100 */
+                .list-des
+                    font-size .3rem /* 30/100 */
+                    color #fff
+                    height .94rem /* 94/100 */
+                    line-height .94rem /* 94/100 */
+                    position relative
+                    .at
+                        font-size .5rem /* 50/100 */
+                        vertical-align middle
+                        margin-right .18rem /* 18/100 */
+                        color #fff
+                        margin-left .36rem /* 36/100 */
+                    &:after
+                        content ''
+                        display block
+                        width 0
+                        height 0
+                        border-width .1rem /* 10/100 */
+                        border-style solid
+                        border-color transparent transparent transparent #fff
+                        position absolute
+                        right .5rem /* 50/100 */
+                        top 50%
+                        transform translateY(-50%)
+                .list-ctx
+                    position relative
+                    top -0.02rem /* 2/100 */
+                    font-size .3rem /* 30/100 */
+                    color #666
+                    border .02rem /* 2/100 */ solid rgba(5,5,5,0.08)
+                    padding .26rem /* 26/100 */
+                    display none
+                    transition all
+                .yellow
+                    background #FFB628
+                    & + .list-ctx
+                        background #FFF9EC
+                .green
+                    background #00D0AA
+                    & + .list-ctx
+                        background #ECFFFC
+                .orange
+                    background #FF7C6A
+                    & + .list-ctx
+                        background #FFF1EF
+                .light-green
+                    background #8FD75B
+                    & + .list-ctx
+                        background #F2FFE8
+                .blue
+                    background #749DF1
+                    & + .list-ctx
+                        background #F1F6FF
+            .active
+                .list-des:after
+                    transform rotate(90deg)
+                    transition all 0.2s
+                .list-ctx
+                    display block
+                    transition all 0.3s

@@ -1,4 +1,29 @@
 @import './common.styl'
+*
+    -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+    -webkit-tap-highlight-color transparent
+.swiper-pagination-bullet
+    width .11rem /* 11/100 */
+    height .11rem /* 11/100 */
+    background rgba(255,255,255,.5)
+.swiper-pagination-bullet-active
+    background #fff
+.swiper-prev,.swiper-next
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    z-index 10
+    .at
+        display block
+        vertical-align middle
+        font-size .4rem /* 40/100 */
+        color #D8D8D8
+.swiper-prev
+    left 0
+.swiper-next
+    right 0
+    .at
+        transform rotate(180deg)
 .wrap
     background #F4F4F4
     min-height 100vh
@@ -19,7 +44,7 @@
             width calc(100% - .62rem /* 62/100 */)
             display inline-block
             line-height .555rem /* 55.5/100 */
-    .swiper-container
+    .banner-swiper
         width 100%
         margin-top .29rem /* 29/100 */
         .swiper-slide > img
@@ -43,7 +68,7 @@
             text-decoration none
             .at
                 color #5184EE
-                font-size .44rem /* 44/100 */
+                font-size .5rem /* 50/100 */
             p
                 margin-top .15rem /* 15/100 */
                 color #333333
@@ -75,9 +100,8 @@
                     font-size .5rem /* 50/100 */
                     font-weight 600
                 .type-name
-                    font-size .38rem /* 38/100 */
+                    font-size .3rem /* 30/100 */
                     font-weight 600
-                    color #fff
                     line-height .53rem /* 53/100 */
                     margin-top .13rem /* 13/100 */
                     margin-bottom .12rem /* 12/100 */
@@ -86,23 +110,22 @@
                     font-size .24rem /* 24/100 */
                     line-height .33rem /* 33/100 */
             .type-1
-                background #FFB629
-                color #784208
+                background #EDF9E3
+                color #65A430
             .type-2
-                background #00D1AA
-                color #026956
+                background #FEF3DC
+                color #D08636
             .type-3
-                background #FF7C6A
-                color #BC2E1B
+                background #FEE9E7
+                color #ED614E
             .type-4
-                background #8DD751
-                color #396117
+                background #D6F7F1
+                color #439C8B
             .type-5
-                background #749DF1
-                color #2B406B
+                background #E9EFFD
+                color #5E86D9
     .record-process
         margin-top .3rem /* 30/100 */
-        border .01rem /* 1/100 */solid #979797
         background #fff
         width 100%
         padding .24rem /* 24/100 */.29rem /* 29/100 */0
@@ -122,51 +145,111 @@
                 color #5184EE
                 font-weight 500
                 text-decoration none
-        .list
-            padding-top .24rem /* 24/100 */
-            li
+        .info-model
+            .list
+                padding-top .24rem /* 24/100 */
+                li
+                    overflow hidden
+                    margin-bottom .28rem /* 28/100 */
+                    .at
+                        float left
+                        width .8rem /* 80/100 */
+                        height .8rem /* 80/100 */
+                        line-height .8rem /* 80/100 */
+                        text-align center
+                        border-radius 50%
+                        color #fff
+                        font-size .5rem /* 50/100 */
+                    .icon-blue
+                        background #90B1F4
+                    .icon-green
+                        background #A4DF74
+                    .icon-orange
+                        background #FCC251
+                    .content
+                        float right
+                        width calc(100% - 1.08rem /* 108/100 */)
+                        .title
+                            font-size .24rem /* 24/100 */
+                            color #333333
+                            font-weight 600
+                            line-height .33rem /* 33/100 */
+                            margin-bottom .14rem /* 14/100 */
+                        .des
+                            font-size .2rem /* 20/100 */
+                            color #666
+                            margin-bottom .14rem /* 14/100 */
+                            line-height .28rem /* 28/100 */
+                        .link
+                            display block
+                            font-size .2rem /* 20/100 */
+                            color #005DCC
+                            line-height .28rem /* 28/100 */
+                            text-decoration none
+                            margin-bottom .14rem /* 14/100 */
+            .record-btn
+                width 100%
+                height .94rem /* 94/100 */
+                border-radius .1rem /* 10/100 */
+                border .02rem /* 2/100 */solid rgba(5,5,5,0.08)
+                outline none 
+                background #5184EE
+                font-size .36rem /* 36/100 */
+                color #fff
+                font-weight 500
+                margin-bottom .37rem /* 37/100 */
+        .des-model
+            .des-wrap
                 overflow hidden
-                margin-bottom .28rem /* 28/100 */
-                .at
+                box-sizing border-box
+                padding-top .5rem /* 50/100 */
+                padding-bottom .6rem /* 60/100 */
+                padding-left .59rem /* 59/100 */
+                padding-right .59rem /* 59/100 */
+                img
                     float left
-                    width .8rem /* 80/100 */
-                    height .8rem /* 80/100 */
-                    line-height .8rem /* 80/100 */
-                    text-align center
-                    border-radius 50%
-                    background rgba(81,132,238,0.8)
-                    color #fff
-                    font-size .4rem /* 40/100 */
-                .content
+                    width 1.58rem /* 158/100 */
+                    height 1.96rem /* 196/100 */
+                    margin-right .29rem /* 29/100 */
+                .des-box
                     float right
-                    width calc(100% - 1.08rem /* 108/100 */)
+                    font-size 0
+                    width calc(100% - 1.87rem /* 187/100 */)
                     .title
                         font-size .24rem /* 24/100 */
-                        color #333333
-                        font-weight 600
+                        color #333
                         line-height .33rem /* 33/100 */
-                        margin-bottom .14rem /* 14/100 */
-                    .des
+                        margin-bottom .1rem /* 10/100 */
+                        font-weight 600
+                    .sub-title
                         font-size .2rem /* 20/100 */
-                        color #666
-                        margin-bottom .14rem /* 14/100 */
+                        color #4A4A4A
+                        line-height .4rem /* 40/100 */
                     .link
                         display block
                         font-size .2rem /* 20/100 */
-                        color #005DCC
-                        line-height .28rem /* 28/100 */
+                        color #5184EE
+                        line-height .4rem /* 40/100 */
                         text-decoration none
-        .record-btn
-            width 100%
-            height .94rem /* 94/100 */
-            border-radius .1rem /* 10/100 */
-            border .02rem /* 2/100 */solid rgba(5,5,5,0.08)
-            outline none 
-            background #5184EE
-            font-size .36rem /* 36/100 */
-            color #fff
-            font-weight 500
-            margin-bottom .37rem /* 37/100 */
+                .des-title
+                    font-size .24rem /* 24/100 */
+                    text-align center
+                    font-weight 600
+                    color #333
+                .des-btn
+                    display block
+                    outline none
+                    border .02rem /* 2/100 */ solid rgba(5,5,5,0.08)
+                    background #5184EE
+                    border-radius .1rem /* 10/100 */
+                    width 4.98rem /* 498/100 */
+                    height .94rem /* 94/100 */
+                    margin 0 auto
+                    padding 0
+                    font-size .36rem /* 36/100 */
+                    color #fff
+                    margin-top .39rem /* 39/100 */
+                    font-weight 500
     .common-problem
         margin-top .29rem /* 29/100 */
         .head
@@ -183,6 +266,40 @@
                 float right
                 font-weight 500
                 text-decoration none
+        .list-question
+            margin-top .37rem /* 37/100 */
+            .title
+                font-size .3rem /* 30/100 */
+                color #5184EE
+                font-weight 600
+                line-height .42rem /* 42/100 */
+            .question-tags
+                margin-top .29rem /* 29/100 */
+                .row
+                    overflow hidden
+                    width 100%
+                    height .68rem /* 68/100 */
+                    margin-bottom .28rem /* 28/100 */
+                    a
+                        background #fff
+                        border .01rem /* 1/100 */solid rgba(81,132,238,1)
+                        font-size .28rem /* 28/100 */
+                        line-height .4rem /* 40/100 */
+                        font-weight bold
+                        height .64rem /* 64/100 */
+                        width 3.2rem /* 320/100 */
+                        line-height .64rem /* 64/100 */
+                        text-align center
+                        color #333333
+                        text-decoration none
+                    .active
+                        color #fff
+                        background #5184EE
+                        border 0
+                    .left
+                        float left
+                    .right
+                        float right
         .list
             margin-top .3rem /* 30/100 */
             padding 0 .28rem /* 28/100 */
